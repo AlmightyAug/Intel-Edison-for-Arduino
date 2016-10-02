@@ -13,7 +13,6 @@ rgb_lcd lcd;
 
 int thresholdvalue = 400;
 
-
 void setup()
 {
     Serial.begin(115200); 
@@ -24,18 +23,12 @@ void setup()
     Serial.println("No card or failure");
     return;
 
-
-
 Serial.println("Card found");
   }
 
   //LED Section
   pinMode(pinLed, OUTPUT);
 }
-  
-
-  
-
 
 void breath(unsigned char color)
 {
